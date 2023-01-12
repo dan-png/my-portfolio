@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var(--container-color);
+  background-color: var(--body-color);
 }
 
 .nav{
@@ -51,4 +51,80 @@
 .active-link,
 .nav_link:hover {
   color: var(--title-dark);
+}
+
+          /* BREAK POINTS */
+/* Medium Devices */
+@media screen and (max-width: 768px) {
+  .header{
+    top: initial;
+    bottom: 0;
+  }
+
+  .nav {
+    height: var(--header-height);
+  }
+
+  .nav_menu {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--body-color);
+    padding: 2rem 1.5rem 4rem;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    transition: .3s;
+  }
+
+  /* Show Menu */
+  .show-menu {
+    bottom: 0;
+  }
+
+  .nav_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .nav_icon{
+    font-size: var(--h3-font-size);
+  }
+
+  .nav_close{
+    position: absolute;
+    right: 1.3rem;
+    bottom: .5rem;
+    font-size: var(--h2-font-size);
+    cursor: pointer;
+    color: var(--title-color);
+
+  }
+
+  .nav_close:hover {
+    color: var(--title-color-dark);
+  }
+
+  .nav_toggle {
+    font-size: var(--h3-font-size);
+    cursor: pointer;
+  }
+
+  .nav_icon,
+  .nav_close,
+  .nav_toggle {
+    display: block;
+  }
+}
+
+
+/* Small Devices */
+@media screen and (max-width: 350px) {
+  .nav_menu{
+    padding: 2rem .25rem 4rem;
+  }
+
+  .nav_list{
+    column-gap: 0;
+  }
 }

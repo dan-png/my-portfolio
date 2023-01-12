@@ -19,7 +19,7 @@
   --body-font: "Poppins", sans-serift;
 
   /* .5rem = 8px || 1rem = 16px */
-  --l-font-size: 3.5rem;
+  --l-font-size: 3.25rem;
   --h1-font-size: 2.25rem;
   --h2-font-size: 1.5rem;
   --h3-font-size: 1.25rem;
@@ -174,13 +174,28 @@ img {
 }
 
 
-/* Break Points */
+          /* BREAK POINTS */
 /* Large Devices */
 @media screen and (max-width: 992px) {
-  
+  .container{
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+  }
 }
 
 /* Medium Devices */
 @media screen and (max-width: 768px) {
   
+}
+
+@media  screen and (max-width: 576px) {
+  
+}
+
+/* Small Devices */
+@media screen and (max-width: 350px) {
+  .container {
+      margin-left: var(--mb-1);
+      margin-right: var(--mb-1);
+    }
 }
