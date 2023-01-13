@@ -181,10 +181,23 @@ img {
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
   }
+
+  .button {
+    padding: 1rem 1.75rem;
+  }
+
+  .button_icon{
+    width: 22px;
+    height: 22px;
+  }
 }
 
 /* Medium Devices */
 @media screen and (max-width: 768px) {
+  .section {
+    padding: 2rem 0 4rem;
+  }
+
   
 }
 
@@ -194,8 +207,11 @@ img {
 
 /* Small Devices */
 @media screen and (max-width: 350px) {
+  :root {
+    --l-font-size: 2.25rem;
+  }
   .container {
       margin-left: var(--mb-1);
-      margin-right: var(--mb-1);
+      margin-right: var(--mb-2);
     }
 }
