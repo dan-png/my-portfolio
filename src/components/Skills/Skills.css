@@ -1,0 +1,25 @@
+.skills_container{
+  grid-template-columns: repeat(3, 280px);
+  column-gap: 1.5rem;
+  justify-content: center;
+}
+
+.skills_content {
+  background-color: var(--container-color);
+  border: 1px solid rgba(0,0,0,0.1);
+  padding: 2rem 2rem;
+  border-radius: 1.25rem;
+}
+
+.skills_title{
+  font-size: var(--nm-font-size);
+  font-weight: var(--font-md);
+  text-align: center;
+  margin-bottom: var(--mb-1-5);
+}
+
+.skills_box{
+  display: flex;
+  justify-content: center;
+  column-gap: .5rem;
+}
